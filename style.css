@@ -46,7 +46,7 @@ footer {
 
 #grid {
 	display: grid;
-	grid-template-columns: minmax(0px, 50px) minmax(100px, 1000px) minmax(0px, 50px);
+	grid-template-columns: auto minmax(100px, 1400px) auto;
 	grid-template-rows: auto;
 }
 
