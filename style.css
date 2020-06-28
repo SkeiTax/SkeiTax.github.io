@@ -1,1 +1,56 @@
 
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+header, footer, .sitecontent{
+	backdrop-filter: blur(15px);
+	background-color: #40614066;
+}
+
+body {
+	color: #dadada;
+	min-height: 100vh;
+	min-width: 500px;
+	background: url(images/bg.jpg) no-repeat 50% 50%;
+	margin: 0px auto;
+}
+
+header {
+	height: 7.5vh;
+	width: 100%;
+}
+
+
+
+footer {
+	height: 5vh;
+	width: 100%;
+	position: absolute;
+	bottom: -1px;
+}
+
+.sitecontent {
+	background: #60906060;
+	min-height: 80vh;
+	height: auto;
+	#max-width: 1000px;
+	width: auto;
+	margin: 2vh;
+	padding: 2vh;
+	
+	border-radius: 20px;
+}
+
+#grid {
+	display: grid;
+	grid-template-columns: minmax(0px, 50px) minmax(100px, 1000px) minmax(0px, 50px);
+	grid-template-rows: auto;
+}
+
+border {
+	min-width: 0px;
+	max-width: 100px;
+}
