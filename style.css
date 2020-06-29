@@ -15,6 +15,8 @@ body {
 	min-height: 100vh;
 	min-width: 500px;
 	background: url(images/bg.jpg) no-repeat 50% 50%;
+	background-attachment: scroll;
+    background-size: cover; /* Масштабируем фон */
 	margin: 0px auto;
 }
 
@@ -29,7 +31,7 @@ footer {
 	height: 5vh;
 	width: 100%;
 	position: absolute;
-	bottom: -1px;
+	bottom: 0px;
 }
 
 .sitecontent {
@@ -38,7 +40,8 @@ footer {
 	height: auto;
 	#max-width: 1000px;
 	width: auto;
-	margin: 2vh;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 	padding: 2vh;
 	
 	border-radius: 20px;
@@ -46,11 +49,40 @@ footer {
 
 #grid {
 	display: grid;
-	grid-template-columns: auto minmax(100px, 1400px) auto;
+	grid-template-columns: minmax(0, 5vw) minmax(min(500px, 100vw), auto) minmax(0, 5vw);
 	grid-template-rows: auto;
 }
 
+.content-grid {
+	display: grid;
+}
+
+.column {
+	display: grid;
+	grid-template-columns: 5vh;
+}
+
+.row {
+	display: grid;
+	grid-template-row: 5vh;
+}
+
 border {
-	min-width: 0px;
-	#max-width: 100px;
+	width: 5vw;
+	min-width: 0;
+}
+
+
+
+userinfo {
+	display: grid;
+	grid-template-columns: 20vh auto;
+	grid-template-rows: 20vh;
+}
+
+useravatar {
+	border-radius: 50%;
+	background: url(https://sun9-6.userapi.com/c639617/v639617330/540ab/Pcd49eFLFs8.jpg) 50% 50%;
+	background-size: 100% 100%;
+	
 }
