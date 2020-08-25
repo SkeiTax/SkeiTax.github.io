@@ -49,7 +49,7 @@ footer {
 
 #grid {
 	display: grid;
-	grid-template-columns: minmax(0, 5vw) minmax(min(500px, 100vw), auto) minmax(0, 5vw);
+	grid-template-columns: auto minmax(min(1000px, 75hw), auto) auto;
 	grid-template-rows: auto;
 }
 
